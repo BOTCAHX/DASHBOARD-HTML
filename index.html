@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="RRuLL" />
+  <base href="https://botcahx.ddns.net" />
+  <link href="https://telegra.ph/file/a815409d4d7fcfbccb650.jpg" rel="icon" />
+  <title>Panel Pterodactyl</title>
+  <link href="https://indrijunanda.github.io/RuangAdmin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="https://indrijunanda.github.io/RuangAdmin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="https://indrijunanda.github.io/RuangAdmin/css/ruang-admin.min.css" rel="stylesheet" />
+  <meta property="og:title" content="Hosting Bot & Website  " />
+  <meta property="og:description"
+    content="KYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" />
+  <meta property="og:image" content="https://telegra.ph/file/a815409d4d7fcfbccb650.jpg" />
+  <meta property="og:url" content="index.html" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/androidstudio.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+
+<body id="page-top">
+  <div id="wrapper">
+    <ul class="navbar-nav sidebar bg-gray-900 accordion bg-light" id="accordionSidebar"
+      style="color: rgb(61, 59, 66);">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center bg-gray-900"
+        style="color: rgb(255, 255, 255);">
+        <span style="color: rgb(255, 255, 255);">Dash Panel</span>
+      </a>
+      <hr class="sidebar-divider my-0" />
+      <li class="nav-item active">
+        <a class="nav-link">
+          <i class="fas fa-fw fa-code"></i>
+          <span>Documentation</span></a>
+      </li>
+      <hr class="sidebar-divider" />
+      <div class="sidebar-heading">Features</div>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
+          aria-expanded="true" aria-controls="collapseBootstrap">
+          <i class="fas fa-fw fa-arrow-down"></i>
+          <span>Dashboard</span>
+        </a>
+        <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
+          <div class="bg-black py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Documentation</h6>
+            <a class="collapse-item" href="https://tiodevhost.my.id">Control Panel</a>
+            <a class="collapse-item" href="https://status.tiodevhost.my.id">Status</a>
+                <a class="collapse-item" href="https://api.whatsapp.com/send?phone=6282221792667&text=*Request%20Free%20Panel*%0A%0A%04Email:%0A%0AUsername:%0A%0APassword:">Register</a>
+          </div>
+        </div>
+      </li>
+      <hr class="sidebar-divider" />
+      <div class="version" id="version-ruangadmin"></div>
+    </ul>
+
+    <div id="content-wrapper" class="d-flex flex-column">
+      <div id="content">
+        <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top bg-gray-900">
+          <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+          <ul class="navbar-nav ml-auto">
+            <div class="topbar-divider d-none d-sm-block"></div>
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img class="img-profile rounded-circle"
+                  src="https://telegra.ph/file/52bf0e9808863f284f271.jpg"
+                  style="max-width: 100px" />
+                <span class="ml-2 d-none d-lg-inline text-white small"></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="container-fluid" id="container-wrapper">
+          <div id="demo" class="alert alert-dark alert-dismissible" role="alert">
+            <div id="browser_info"></div>
+            <script>
+              let arrBulan = [
+                "Januari",
+                "Februari",
+                "Maret",
+                "April",
+                "Mei",
+                "Juni",
+                "Juli",
+                "Agustus",
+                "September",
+                "Oktober",
+                "November",
+                "Desember",
+              ];
+              let txt = "";
+              txt +=
+                "<p><b>Browser CodeName</b>: " +
+                navigator.appCodeName +
+                "</p>";
+              txt += "<p><b>Browser Name</b>: " + navigator.appName + "</p>";
+              txt +=
+                "<p><b>Cookies Enabled</b>: " +
+                navigator.cookieEnabled +
+                "</p>";
+              txt += "<p><b>Browser Online</b>: " + navigator.onLine + "</p>";
+              txt += "<p><b>Platform</b>: " + navigator.platform + "</p>";
+              txt += "<p><b>User-agent</b>: " + navigator.userAgent + "</p>";
+              let text_el = document.querySelector("div#browser_info");
+              setInterval(() => {
+                var d = new Date();
+                const jam = d.getHours().toString().padStart(2, 0);
+                const menit = d.getMinutes().toString().padStart(2, 0);
+                const detik = d.getSeconds().toString().padStart(2, 0);
+                const tgl = d.getDate();
+                const bln = d.getMonth();
+                const thn = d.getFullYear();
+                const bulan = arrBulan[bln];
+                text_el.innerHTML =
+                  txt +
+                  "<b>Date</b>: " +
+                  jam +
+                  ":" +
+                  menit +
+                  ":" +
+                  detik +
+                  "~" +
+                  tgl +
+                  "-" +
+                  bulan +
+                  "-" +
+                  thn +
+                  "<br>Welcome back!";
+              }, 250);
+            </script>
+          </div>
+          <div class="row">
+<div class="col-xl-12 col-lg-12 col-md-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title"></a></h4>
+</div>
+<div class="card-body text-sm-left font-weight-bold"></div>
+</div>
+</div>
+</div>
+<span> <br> </span>
+          <footer class="sticky-footer bg-white">
+            <div class="container my-auto">
+              <div class="copyright text-center my-auto">
+                <span>copyright &copy;
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  <b>TioXd</a></b>
+                </span>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+    <script src="https://indrijunanda.github.io/RuangAdmin/vendor/jquery/jquery.min.js"></script>
+    <script src="https://indrijunanda.github.io/RuangAdmin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://indrijunanda.github.io/RuangAdmin/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="https://indrijunanda.github.io/RuangAdmin/js/ruang-admin.min.js"></script>
+  </div>
+</body>
+
+</html>
+<!----Yang curi moga mati--!>
+<!----By TioXd------>
